@@ -1,0 +1,198 @@
+#banne_page{
+    background-image: url('http://127.0.0.1:8000/images/banner-servicios.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    &::before{
+        content: "";
+        position: absolute;
+        z-index: 1;
+        background-color: rgb(0 0 0 / 34%);
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+    .titulo_center{
+        position: relative;
+        z-index: 2;
+        margin-bottom: 0px;
+    }
+}
+#servicios_all{
+    margin-top: 40px;
+}
+
+.box_icon{
+    &:hover{
+        border: solid 1px $acent;
+            background-color: $primary;
+            h5{
+                color: $white;
+            }
+            a{
+                color: $white;
+            }
+    }
+    transition: 300ms;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    background-color: $primary;
+    gap: 20px;
+    svg{
+        fill: $acent;
+        width: 28px;
+    }
+    h5{
+        font-size: 18px;
+        font-weight: 600;
+        color: $white;
+    }
+    a{
+        font-size: 14px;
+        font-weight: 400;
+        transition: 300ms;
+        color: $text-white;
+        &:hover{
+            color: $acent;
+        }
+    }
+}
+
+#vista_services{
+    margin-top: 50px;
+    .grid-2{
+        gap: 40px;
+    }
+    .izq{
+        .img_principal{
+            img{
+                width: 100%;
+                border-radius: 10px;
+                height: 450px;
+                object-fit: cover;
+            }
+        }
+        .group_images {
+            margin-top: 10px;
+            display: flex;
+            justify-content: space-between;
+            img{
+                width: 100%;
+                border-radius: 10px;
+                height: 100%;
+                object-fit: cover;
+            }
+          }
+
+          .group_images a {
+            width: calc(100% / 3 - 10px); /* Asume que quieres tres imágenes por fila y 10px de margen entre ellas */
+            margin-right: 10px;
+            border-radius: 10px;
+          }
+
+          .group_images a:last-child {
+            margin-right: 0; /* Para que la última imagen no tenga margen a la derecha */
+          }
+
+    }
+    .drh{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        h1{
+            font-size: 30px;
+            font-weight: 700;
+            max-width: 250px;
+        }
+        a{
+            margin-bottom: 20px;
+            svg{
+                fill: $white;
+            }
+        }
+
+    }
+}
+
+#description_services{
+    margin-top: 40px;
+    margin-bottom: 100px;
+    .contenido_description{
+        padding: 30px;
+        border-radius: 14px;
+        background-color: #F6F6F6;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        p{
+            font-size: 16px;
+        }
+    }
+
+}
+
+#description_services ul{
+    font-family: "Source Sans 3", sans-serif;
+font-size: 16px;
+font-weight: 400;
+color: #7E7E7E;
+line-height: 30px;
+}
+#description_services ol{
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #7E7E7E;
+    line-height: 30px;
+}
+
+
+#mas_servicio{
+    // SLIDER
+    margin-bottom: 50px;
+    .active{
+        .box_servicioS{
+            height: 400px!important;
+            gap: 10px;
+        }
+    }
+    .owl-nav{
+        button{
+            position: absolute;
+            top: 50%;
+            z-index: 4;
+            transform: translateY(-50%);
+            background-color: $primary;
+            color: white;
+            border: none;
+            padding: 0px 18px!important;
+            font-size: 30px;
+            align-items: center;
+            cursor: pointer;
+            display: flex;
+            border-radius: 90px;
+            justify-content: center;
+            transition: 300ms;
+
+        }
+        .owl-next{
+            right: -29px;
+        }
+        .owl-prev{
+            left: -29px;
+        }
+    }
+    .owl-theme .owl-nav {
+         margin-top: 0px!important;
+    }
+}
+

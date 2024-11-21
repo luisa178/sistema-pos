@@ -1,0 +1,114 @@
+#banne_page_contacto{
+
+    background-image: url('http://127.0.0.1:8000/images/banner-contacto.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    &::before{
+        content: "";
+        position: absolute;
+        z-index: 1;
+        background-color: rgb(0 0 0 / 34%);
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+    .titulo_center{
+        position: relative;
+        z-index: 2;
+        margin-bottom: 0px;
+    }
+}
+#contacto{
+    margin: 100px 0px;
+    .drh{
+        display: flex;
+        justify-content: end;
+    }
+    form{
+        gap: 20px;
+        max-width: 500px;
+        .group-input{
+            display: flex;
+            gap: 20px;
+            justify-content: space-between;
+
+        }
+        textarea{
+            width: 100%;
+            border: 1px solid $primary;
+            border-radius: 7px;
+            padding: 20px;
+        }
+        p{
+            text-align: center;
+            font-size: 16px;
+            line-height: 22px;
+            margin-bottom: 20px;
+        }
+    }
+    .box{
+        display: flex;
+        gap: 5%;
+        width: 80%;
+        background-color: $acent;
+        padding: 40px;
+        border: 1px solid $primary;
+        border-left: 5px solid $primary;
+        border-radius: 10px;
+        margin-top: 40px;
+        align-items: center;
+        svg{
+            fill: $white;
+        }
+        a{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        div{
+            &:first-child{
+                img{
+                    width: 30px;
+                }
+            }
+            &:last-child{
+
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                h6{
+                    color: $white;
+                }
+                a{
+                    color: #f5f5f5;
+                    &:hover{
+                        color: $primary;
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+.spinner{
+    display: none;
+}
+.spinner {
+    animation-name: spin;
+    animation-iteration-count: infinite; /* Hacer la animación en bucle */
+    animation-duration: 1s;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}

@@ -1,0 +1,139 @@
+.content-caja {
+    @include grid-columns(35%, 75%);
+    gap: 20px;
+  }
+//boton de buscar
+.input-container {
+    position: relative;
+    width: 200px; 
+}
+.input-container input[type="text"] {
+    width: 100%;
+    padding: 10px 40px 10px 10px; 
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.input-container .buttonsearch {
+    position: absolute;
+    right: 10%;
+    top: 20%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+  //Caja de productos
+  .product-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 250px;
+    padding: 16px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+    text-align: center;
+}
+/* Efecto hover en la tarjeta */
+.product-card:hover {
+    transform: scale(1.05);
+}
+
+/* Imagen del producto */
+.product-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+/* Nombre del producto */
+.product-card h3 {
+    font-size: 1.2em;
+    margin: 12px 0 8px;
+    color: #333;
+}
+
+/* Descripción del producto */
+.product-card p {
+    font-size: 0.9em;
+    color: #666;
+    margin-bottom: 12px;
+}
+
+/* Precio del producto */
+.product-card .price {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #27ae60;
+}
+
+
+
+#caja{
+    .izq{
+        background-color: #F5F5F5;
+        border-radius: 10px;
+        border: 1px solid #DEDEDE;
+        padding: 10px;
+        .card-client{
+            background-color: #EBEBEB;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 15px;
+            border-radius: 10px;
+
+        }
+        .grid{
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-top: 20px;
+        }
+    }
+    .drh{
+
+        .drh-hijo1{
+            background-color: #F5F5F5;
+            border-radius: 10px;
+            border: 1px solid #DEDEDE;
+            padding: 10px;
+            .info-head{
+                display: flex;
+                justify-content: space-between;
+                .etiqueta{
+                    background-color: #D1E5F7;
+                    border-radius: 90px;
+                    padding: 15px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    gap: 20px;
+                    p{
+                        color: $title;
+                    }
+                    .close{
+                        background-color: #C6D9EA;
+                        border-radius: 90px;
+                        width: 30px;
+                        height: 30px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                    }
+                }
+            }
+        }
+        .drh-hijo2{
+            background-color: #F5F5F5;
+            border-radius: 10px;
+            border: 1px solid #DEDEDE;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    }
+}

@@ -1,0 +1,90 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+body{
+    margin: 0;
+}
+#login{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(images/bg-login.jpg);
+    padding: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#login form{
+    background-color: #ffffff7f;
+    width: 400px;
+    height: 471px;
+    padding: 40px 80px 40px 80px;
+    border-radius: 10px;
+    border: 1px solid #DEDEDE;
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+#login p{
+    text-align: center;
+    color: #484848;
+    font-family: "Inter", sans-serif;
+    margin: 0;
+}
+#login h1{
+    font-family: "Inter", sans-serif;
+    margin: 0;
+}
+#login input{
+    width: 100%;
+    padding: 18px 18px 18px 50px;
+    border-radius: 10px;
+    border: 1px solid #DEDEDE;
+    
+}
+#login .group-input{
+    width: 100%;
+    position: relative;
+    display: flex;
+}
+#login button{
+    width: 100%;
+    padding: 20px 21px 20px 21px;
+    border-radius: 10px;
+    background-color: #2B2D30;
+    border: none;
+    color: #FFFFFF;
+    cursor: pointer;
+
+}
+#login .user{
+    position: absolute;
+    top: 30%;
+    left: 3%;
+}
+#login .password{
+    position: absolute;
+    top: 30%;
+    left: 3%;
+}
+#login a{
+    text-decoration: none;
+    color: #000000;
+}
+#login button:hover{
+    background-color: #4E5156;
+}
+#login .link-volver-atrás{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 5px;
+    font-weight: 600;
+    font-family: 'Inter';
+    width: 100%;
+}
+/* --------------------// PÁGINA DE INICIO // ------------------------------------ */

@@ -1,0 +1,22 @@
+//CONFIG
+@import './Config/mixins';
+@import './Config/base';
+@import './Config/components';
+
+
+//PÁGINAS
+@import './styles-admin/header';
+@import './styles-admin/footer';
+@import './styles-admin/nav';
+@import './styles-admin/table';
+@import './styles-admin/tutoriales';
+@import './styles-admin/popup';
+@import './styles-admin/contacto';
+@import './styles-admin/responsive';
+@import './styles-admin/rutinas';
+@import './styles-admin/valoraciones';
+@import './styles-admin/check';
+
+//stilos sistema pos
+@import './styles-pos/productos.scss';
+@import './styles-pos/caja.scss';

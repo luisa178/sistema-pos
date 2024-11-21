@@ -1,0 +1,19 @@
+.tintineo {
+    animation: tintineo 300ms infinite; /* La animación dura 2 segundos y se ejecuta una sola vez */
+}
+
+@keyframes tintineo {
+    0% {
+        transform: translateX(0); /* Empieza en la posición original */
+    }
+    50% {
+        transform: translateX(-10px); /* Se mueve hacia la izquierda */
+    }
+    100% {
+        transform: translateX(10px); /* Se mueve hacia la derecha */
+    }
+}
+.swal2-confirm{
+    background-color: $acent!important;
+
+}

@@ -1,0 +1,20 @@
+.infoValoracion{
+    ul{
+        background: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 5px;
+        li{
+            padding: 4px;
+            font-size: 14px;
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+        }
+    }
+    h6{
+        color: $primary;
+        font-size: 16px;
+        font-weight: 500;
+    }
+}

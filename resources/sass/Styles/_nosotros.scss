@@ -1,0 +1,96 @@
+#banne_page_nosotros{
+    background-image: url('http://127.0.0.1:8000/images/banner-nosotros.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    &::before{
+        content: "";
+        position: absolute;
+        z-index: 1;
+        background-color: rgb(0 0 0 / 34%);
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+    .titulo_center{
+        position: relative;
+        z-index: 2;
+        margin-bottom: 0px;
+    }
+}
+
+/* SOBRE NOSOTROS */
+#sobre_nosotros{
+    margin: 100px 0px;
+    .drh{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: start;
+    }
+}
+/* NUESTRO EQUIPO */
+#sobre_nosotros{
+    .grid-2{
+        align-items: center;
+        gap: 30px;
+
+    }
+    .izq{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: start;
+    }
+    .drh{
+        img{
+            width: 100%;
+        }
+    }
+}
+
+/* PREGUNTAS FRECUENTES */
+#preguntas_frecuentes{
+    margin: 100px 0px;
+}
+.carrucel{
+    padding: 30px;
+    border-radius: 5px;
+    background-color: $white;
+    border: 1px solid $primary;
+    margin-bottom: 20px;
+    .header{
+        display: flex;
+        justify-content: space-between;
+        .btn_active_carrousel{
+            cursor: pointer;
+            transition: transform 0.5s ease;
+        }
+    }
+    .body{
+        transition: max-height 0.5s ease, opacity 0.5s ease;
+        opacity: 0;
+        max-height: 0;
+        overflow: hidden;
+    }
+    p{
+        margin-top: 20px;
+        max-width: 70%;
+        font-size: 16px;
+        line-height: 25px;
+    }
+    .active .body {
+        display: block;
+    }
+}
+.active_carrousel .body{
+    opacity: 1;
+    max-height: 1000px;
+}

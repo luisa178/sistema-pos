@@ -1,0 +1,186 @@
+header{
+    padding: 12px;
+    border-radius: 12px;
+    background-color: $white;
+    align-items: center;
+    .izq{
+        img{
+            width: 170px;
+        }
+        .box{
+            display: flex;
+            gap: 10px;
+            align-items: center;
+
+            h6{
+                font-size: 15px;
+            }
+            span{
+                font-size: 13px;
+                color: $text;
+                font-weight: 500;
+            }
+        }
+        .box div{
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    .drh{
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        .box{
+            display: flex;
+            gap: 8px;
+            align-items: center;
+            span{
+                font-size: 13px;
+                color: $text;
+                font-weight: 500;
+            }
+            img{
+                width: 32px;
+                background: $bg-icon;
+                padding: 5px;
+                border-radius: 90px;
+            }
+        }
+        .content_icon,.icon_img{
+            position: relative;
+            padding: 7px 9px 4px 9px;
+            cursor: pointer;
+            border-radius: 90px;
+            &:hover{
+                background-color: $bg-icon;
+            }
+        }
+            .counter{
+                background-color: #E23E3E;
+                border-radius: 90px;
+                padding: 7px;
+                width: 20px;
+                height: 20px;
+                position: absolute;
+                top: 0;
+                right: 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: #fff;
+                font-size: 11px;
+            }
+    }
+}
+.data_pague{
+    padding: 10px 0px;
+    .title{
+        h1{
+            font-size: 20px;
+            font-weight: 600;
+        }
+    }
+    .miga{
+        span{
+            font-size: 14px;
+            color: $text;
+            font-weight: 500;
+        }
+    }
+}
+//NOTIFICACIONES
+.icon_notification{
+
+}
+#card_notification{
+    display: none;
+    background: $white;
+    border: 1px solid #d8d8d8;
+    box-shadow: 0px 3px 20px 0px #0000001c;
+    height: 500px;
+    border-radius: 8px;
+    position: relative;
+    position: absolute;
+    top: 70px;
+    z-index: 99;
+    right: 100px;
+    min-width: 300px;
+    .head_notification{
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        h6{
+            font-size: 18px;
+        }
+    }
+    .body_notification{
+        overflow: hidden;
+        overflow-y: scroll;
+        height: 340px;
+        &::-webkit-scrollbar {
+            width: 8px; /* Ancho de la barra de desplazamiento */
+        }
+        &::-webkit-scrollbar-thumb {
+            background-color: #d8d8d8; /* Color del 'pulgón' del scroll */
+            border-radius: 90px;
+        }
+        &::-webkit-scrollbar-track {
+            background-color: #fff; /* Color de fondo de la barra de desplazamiento */
+        }
+        .contentSinNotificacion{
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 12px;
+            text-align: center;
+        }
+        .content_notification{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 20px;
+            border-bottom: 1px solid #0000001c;
+
+            &:hover{
+                background-color: $bg-icon;
+            }
+
+            div{
+                display: flex;
+                flex-direction: column;
+                gap: 6px;
+                h5{
+                    font-size: 13px;
+                    font-weight: 600;
+                    color: $title;
+                }
+                span{
+                    color: $text;
+                    font-size: 14px;
+                    display: flex;
+                    gap: 4px;
+                    img{
+                        width: 13px;
+                    }
+                }
+                .delet{
+                    width: 23px;
+                    &:hover{
+                        filter: contrast(0.5);
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+    .footer_notification{
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+
+
+    }
+}

@@ -1,0 +1,45 @@
+// LINEAS
+@mixin line {
+  border: 1px solid $line;
+}
+
+// SOBRAS
+@mixin sombra {
+  box-shadow: $shadow;
+}
+
+// CAJAS
+@mixin box {
+  .title_box{
+    padding: 12px;
+    border-bottom: 1px solid $line;
+    margin-bottom: 10px;
+    h2{
+      font-size: 12px;
+      font-weight: 600;
+    }
+  }
+  background: $white;
+
+  border-radius: 7px;
+  @include line();
+  color: $bg-caja;
+}
+
+// BOTONES
+@mixin botones {
+  padding: 10px 25px;
+  background-color: $acent;
+  color: $white;
+  transition: 300ms;
+  &hover {
+    color: $hover;
+    background: $primary;
+  }
+}
+// GRID_COLUMNS
+@mixin grid-columns($col1: 25%, $col2: 75%) {
+  display: grid;
+  grid-template-columns: $col1 $col2;
+gap:20px;
+}

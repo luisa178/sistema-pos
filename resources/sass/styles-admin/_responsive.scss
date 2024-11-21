@@ -1,0 +1,270 @@
+
+.salir_cel{
+    form{
+        button{
+            color: #C5C5C5;
+            background: none;
+            padding: 15px 15px!important;
+            border-radius: 12px;
+            align-items: center;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            display: flex;
+            gap: 5px;
+            width: 100%;
+            align-items: center;
+            justify-content: start;
+            margin-top: 50px!important;
+            cursor: pointer;
+            background-color: #00000061!important;
+            img{
+                width: 18px!important;
+            }
+        }
+    }
+}
+//MAX - 767px
+@media(max-width:998px){
+    //NAV
+    #nav{
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 70%;
+        box-shadow: 0px 0px 2120px 2220px #00000030;
+        z-index: 999;
+        .contraer_retraer{
+            display: none;
+        }
+        .salir_cel{
+            form{
+                button{
+                    color: #C5C5C5;
+                    background: none;
+                    padding: 15px 15px!important;
+                    border-radius: 12px;
+                    align-items: center;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                    display: flex;
+                    gap: 5px;
+                    width: 100%;
+                    align-items: center;
+                    justify-content: start;
+                    margin-top: 50px!important;
+                    cursor: pointer;
+                    background-color: #6466A6!important;
+                    img{
+                        width: 18px!important;
+                    }
+                }
+            }
+        }
+    }
+    //header
+    header{
+        display: flex!important;
+        .drh{
+            .icon_nav{
+                background-color: $bg-icon;
+                padding: 10px;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+            .icon_salir{
+                display: none;
+            }
+        }
+    }
+    .text-notif{
+        display: none;
+    }
+    #card_notification{
+        top: 85px;
+        right: 15px;
+        min-width: 280px;
+    }
+    .data_pague {
+        display: flex;
+    }
+    .btn_action {
+         gap: 0px;
+        justify-content: flex-start;
+        margin-top: 0px;
+        overflow: hidden;
+        overflow-x: scroll;
+        width: 100%;
+        margin-bottom: 10px;
+        button{
+            width: 250px;
+            justify-content: center;
+        }
+    }
+    .content_img_comprobantes .flex.comprobante-img{
+        width: 31%;
+    }
+    //BODY
+    #content_all_app_body{
+        #app_body{
+            width: 100%;
+        }
+    }
+    //table responsive
+    #miFormulario{
+        width: 100%;
+        overflow: hidden;
+        overflow-x: scroll;
+    }
+    #table_acordeon{
+        width: 100%;
+        overflow: hidden;
+        overflow-x: scroll;
+        .body_acordion{
+            width: 100%;
+            overflow: hidden;
+            overflow-x: scroll;
+            td{
+                min-width: 150px!important;
+                padding: 10px;
+            }
+        }
+    }
+    //LOGIN
+    #content_ingresar{
+        width: 100%;
+        flex-direction: column;
+        .izq,.drh{
+            width: 100%;
+        }
+        .izq{
+            height: 100vh;
+        }
+        .drh{
+            form{
+                padding: 20px;
+                border-radius: 10px;
+                position: fixed;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background-color: $white;
+                width: 80%;
+                height: 80vh;
+                left: 50%;
+                top: 50%;
+                transform: translate( -50%,-50%);
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                overflow: hidden;
+                overflow-y: scroll;
+                h2{
+                    font-size: 32px;
+                }
+            }
+        }
+
+    }
+    //CONSULTAR COMPROBANTES
+    .contenido_consulta #lista_consulta{
+        width: 90%;
+    }
+    #content_ingresar .head .btn-atras {
+        position: fixed;
+        top: 10px;
+        left: 10px;
+        z-index: 990000;
+        button{
+            background-color: $acent;
+        }
+    }
+    //DIAS INGRESO MERCADEO
+    .cotent_dias_semana{
+        overflow: hidden;
+        width: 100%;
+        overflow-x: scroll;
+        flex-wrap: wrap;
+        gap: 10px;
+        .dias{
+            width: 150px;
+        }
+    }
+    .formAgregarDias select {
+        width: 300px;
+    }
+}
+//MIN - 998PX
+@media(min-width:998px) and (max-width:1400px){
+    //header
+    header{
+        .drh{
+            .icon_nav{
+                display: none;
+            }
+        }
+
+    }
+    #nav{
+        width: 25%;
+    }
+    header .drh .icon_nav{
+        display: none;
+    }
+    #content_all_app_body #app_body{
+        width: 75%;
+    }
+    #content_ingresar .drh{
+        padding: 20px 40px;
+
+    }
+    .btn_action{
+        margin-top: 57px;
+    }
+    #consulta .izq {
+        img{
+            width: 400px;
+        }
+    }
+    #consulta .izq {
+        .img-consultar-visitante{
+            width: 500px;
+        }
+    }
+    // .salir_cel{
+    //     display: none;
+    // }
+        //DIAS INGRESO MERCADEO
+        .cotent_dias_semana{
+            overflow: hidden;
+            width: 100%;
+            overflow-x: scroll;
+            flex-wrap: wrap;
+            gap: 10px;
+            .dias{
+                width: 150px;
+            }
+        }
+        .formAgregarDias select {
+            width: 30z0px;
+        }
+
+}
+
+//MIN - 1400PX
+@media(min-width:1400px){
+    //header
+    header .drh .icon_nav{
+        display: none;
+    }
+    // .salir_cel{
+    //     display: none;
+    // }
+
+}

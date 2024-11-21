@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #f1f1f1;
+}
+.nav-vertical{
+    width: 20%;
+    background-color: #17181a;
+    height: 100vh;
+    padding: 34px 48px;
+    overflow-y: scroll;
+}
+.nav-vertical::-webkit-scrollbar {
+    width: 12px; /* Ancho de la barra de desplazamiento vertical */
+    height: 12px; /* Altura de la barra de desplazamiento horizontal */
+}
+
+.nav-vertical::-webkit-scrollbar-track {
+    background: #17181a; /* Color del fondo de la barra de desplazamiento */
+}
+
+.nav-vertical::-webkit-scrollbar-thumb {
+    background: #888; /* Color de la "perilla" de la barra de desplazamiento */
+    border-radius: 6px; /* Bordes redondeados */
+}
+
+.nav-vertical::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Color de la "perilla" cuando se pasa el cursor sobre ella */
+}
+
+
+
+
+
+.nav-vertical ul svg{
+    fill: #606E79;
+}
+.nav-vertical ul svg:hover{
+    fill: #FFFFFF;
+}
+.nav-vertical li{
+   list-style: none;
+}
+#body{
+    width: 100%;
+    display: flex;
+}
+
+.contenedor{
+    width: 80%;
+}
+.nav-vertical a{
+    color: #606E79;
+    text-decoration: none;
+    font-family: Inter;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 20px 0px;
+    padding: 12px 18px;
+}
+.nav-vertical a:hover{
+padding: 12px 18px;
+background-color: #2B2D30;
+color: #FFFFFF;
+}
+
+.nav-vertical a:hover svg{
+    fill: white;
+}
+.nav-vertical .logo{
+    fill: #FFFFFF;
+}
+.TitleNav h6{
+    font-family: Inter;
+    color: #606E79;
+}
+.TitleNav .linea{
+width: 100%;
+height: 1px;
+background-color: #2B2D30;
+}
+.TitleNav{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.nav-vertical-head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.nav-vertical-head .icon-menu{
+    fill: #FFFFFF;
+    background-color: #2B2D30;
+    border-radius: 30px;
+    padding: 5px;
+    width: 37px;
+    height: 37px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-vertical-head .icon-menu svg{
+    fill: #FFFFFF;
+}
+
+/* NAV TOGGLE VERTICAL ACIVE */
+.active-Nav-Vertical-toogle{
+   width: 70px; 
+   
+}
+
+.active-Nav-Vertical-toogle .TitleNavGroup{
+    display: none;
+}
+.active-Nav-Vertical-toogle .nav-vertical-head{
+    flex-direction: column-reverse;
+}
+.active-Nav-Vertical-toogle .linea{
+    display: none;
+}
+.active-Nav-Vertical-toogle h6{
+    font-size: 10px;
+}
+.active-Nav-Vertical-toogle ul{
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+}
+/*estilos de nav horizontal*/
+.nav-horizontal{
+    padding: 15px;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: flex-end;
+
+}
+.nav-horizontal img{
+    height: 50px;
+    width: 50px;
+    border-radius: 90px;
+}
+.nav-horizontal .box-perfil{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+/*estilos titulo de la pagina inventario*/
+.title{
+    padding: 10px;
+
+}
+.title h1{
+    font-family: Inter;
+    font-size: 25px;
+}
+/*contenido*/
+.content-all{
+    background-color: #FFFFFF;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px;
+}

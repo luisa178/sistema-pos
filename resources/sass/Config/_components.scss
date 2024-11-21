@@ -1,0 +1,115 @@
+.titulo{
+
+    .subtitulo{
+        display: flex;
+        gap: 5px;
+        font-size: 18px;
+        font-weight: 400;
+        h6{
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+        }
+    }
+    h2{
+        font-size: 55px;
+        color: $title;
+        line-height: 59px;
+        margin-top: 15px;
+        span{
+            color: $acent;
+        }
+    }
+    .center{
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        p{
+            text-align: center;
+            font-size: 30px;
+        }
+        h2{
+            text-align: center;
+        }
+    }
+}
+.link_text{
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    margin-top: 40px;
+    h6{
+        display: flex;
+        gap: 10px;
+        color: $white;
+        text-transform: uppercase;
+        font-weight: 400;
+        letter-spacing: 3px;
+        align-items: center;
+        transition: 300ms;
+        svg{
+            fill: $white;
+        }
+        &:hover{
+            svg{
+                transition: 300ms;
+                margin-left: 10px;
+            }
+        }
+    }
+}
+.animacion_grabacion{
+    background: $acent;
+    border-radius: 5px;
+    width: 16px;
+    height: 23px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .punto{
+        background-color: $red;
+        width: 9px;
+        height: 9px;
+        border-radius: 90px;
+        animation: parpadeo 1s infinite;
+    }
+}
+@keyframes parpadeo {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.left{
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.titulo_center{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+    margin-bottom: 80px;
+    .subtitulo{
+        justify-content: center;
+        text-align: center;
+    }
+    h2,h6{
+        text-align: center;
+    }
+
+
+}
+.titulo_white{
+
+    h2,h6{
+        color: $white;
+    }
+    p{
+        color: $text-white;
+    }
+}
